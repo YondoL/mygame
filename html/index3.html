@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title></title>
+</head>
+<style type="text/css">
+	@keyframes btnZoom {
+		0% {
+			opacity: 1.0;
+			transform: scale(1, 1)
+		}
+		60% {
+			opacity: 0.0;
+			transform: scale(1.2, 1.2)
+		}
+		100% {
+			opacity: 0.0;
+		}
+	}
+
+	@-moz-keyframes btnZoom {
+		0% {
+			opacity: 1.0;
+			transform: scale(1, 1)
+		}
+		60% {
+			opacity: 0.0;
+			transform: scale(1.2, 1.2)
+		}
+		100% {
+			opacity: 0.0;
+		}
+	}
+
+	@-webkit-keyframes btnZoom {
+		0% {
+			opacity: 1.0;
+			transform: scale(1, 1)
+		}
+		60% {
+			opacity: 0.0;
+			transform: scale(1.2, 1.2)
+		}
+		100% {
+			opacity: 0.0;
+		}
+	}
+
+	@-o-keyframes btnZoom {
+		0% {
+			opacity: 1.0;
+			transform: scale(1, 1)
+		}
+		60% {
+			opacity: 0.0;
+			transform: scale(1.2, 1.2)
+		}
+		100% {
+			opacity: 0.0;
+		}
+	}
+
+	h3 {
+		color: red;
+		text-align: center;
+	}
+
+	.wrap {
+		position: relative;
+		width: 100px;
+		margin: 0 auto;
+	}
+
+	.wrap,
+	.wrap span {
+		cursor: pointer;
+		display: block;
+		width: 205px;
+		height: 205px;
+		background: url(../images/start.png) -404px -153px no-repeat;
+	}
+
+	.wrap span {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		margin: 0;
+		opacity: 0;
+	}
+
+	.wrap span {
+		animation: btnZoom infinite linear 0.8s;
+		-moz-animation: btnZoom infinite linear 0.8s;
+		-webkit-animation: btnZoom infinite linear 0.8s;
+		-o-animation: btnZoom infinite linear 0.8s;
+	}
+</style>
+
+<body>
+	<h3>鼠标放在按钮上试试</h3>
+	<div class="wrap">
+		<span></span>
+	</div>
+</body>
+
+</html>
